@@ -1,0 +1,69 @@
+body{
+	width:790px;
+	margin: 0px auto;
+	
+}
+
+header{
+	background: black;
+	padding: 10px 10px 10px 10px
+}
+
+h1, h2, h3{
+	font-family: 'fugaz one' , cursive;
+}
+
+h1{
+	color: white;
+}
+
+p{
+	color: grey;
+	font-size: 13px;
+	font-family: helvetica, arial, sans-serif;
+	text-align: justify;
+}
+
+ol{
+	font-size: 13px;
+	font-family: helvetica, arial, sans-serif;
+	width: 395px;
+	list-style-type: circle;
+}
+
+ul{
+	color: white;
+	font-family: helvetica, arial, sans-serif;
+	list-style-type: none;
+
+}
+
+
+h2{
+	float: right;
+}
+
+.main{
+	float: right;
+}
+
+a:link{
+	color: blue
+}
+
+a:visited{
+	color: purple
+}
+a:hover{
+	color: silver
+}
+a:active{
+	color: black
+}
+
+
+
+.closing{
+	-moz-column-count: 2;
+}
+
