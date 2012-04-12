@@ -1,6 +1,7 @@
 body{
-	width:790px;
+	width:100%;/*790*/
 	margin: 0px auto;
+	font: 100%/1.5;
 	
 }
 
@@ -14,38 +15,47 @@ h1, h2, h3{
 }
 
 h1{
+	font-size: 1.5em;
 	color: white;
+	float: left;
 }
 
 p{
 	color: grey;
-	font-size: 13px;
+	font-size: 0.8125em;
 	font-family: helvetica, arial, sans-serif;
 	text-align: justify;
 }
+nav{
+	margin: 0 auto;
+	color: white;
+	list-style-type: none;
+}	
+
+h2{
+	float:right;
+}
 
 ol{
-	font-size: 13px;
+	font-size: 0.8125em;
 	font-family: helvetica, arial, sans-serif;
-	width: 395px;
+	width: 50%;
 	list-style-type: circle;
+	padding: 0;
+
 }
 
 ul{
+	font-size: 0.8125em;
 	color: white;
 	font-family: helvetica, arial, sans-serif;
 	list-style-type: none;
-
+	padding: 0;
 }
-
 
 h2{
-	float: right;
 }
 
-.main{
-	float: right;
-}
 
 a:link{
 	color: blue
@@ -61,9 +71,46 @@ a:active{
 	color: black
 }
 
+#intro{
+	width: 50.632911%; /*400px;*/
+	float: right;
+	margin: 3.75%; /*15px;*/
+}
+#closing{
+	margin: 1.8987342%; /*15px;*/
+	column-count: 2;
+}
+
+#main_image_container{
+	border: 3px solid #666;
+	width: 38.35443%;/*303px*/
+	float: left;
+}
+
+#main_image_container img{
+	max-width: 100%;
+}
 
 
-.closing{
-	-moz-column-count: 2;
+/*===============Media Queries===================*/
+
+/*Tablet portrait to 960*/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	
+}
+
+/*mobile landscape to tablet portrait*/
+@media only screen and (min-width: 480px) and (max-width: 767px){
+
+}
+
+
+/*mobile portrait to mobile landscape*/
+@media only screen and (min-width: 479px) {
+
+#main_image_container{display:none;}
+
+
+	
 }
 
