@@ -2,12 +2,17 @@ body{
 	width:100%;/*790*/
 	margin: 0px auto;
 	font: 100%/1.5;
-	
+	background-image: url('../images/pinstripe.jpg');
+	background-repeat:repeat-x;
+	max-width: 900px;
 }
 
 header{
+	width: 100%;
+	height: 50px;
 	background: black;
 	padding: 10px 10px 10px 10px
+
 }
 
 h1, h2, h3{
@@ -18,10 +23,16 @@ h1{
 	font-size: 1.5em;
 	color: white;
 	float: left;
+	clear: both;
+}
+
+h3{
+	text-shadow: 2px 2px black;
+	color: white;
 }
 
 p{
-	color: grey;
+	color: gray;
 	font-size: 0.8125em;
 	font-family: helvetica, arial, sans-serif;
 	text-align: justify;
@@ -30,18 +41,17 @@ nav{
 	margin: 0 auto;
 	color: white;
 	list-style-type: none;
+	
 }	
 
-h2{
-	float:right;
-}
 
 ol{
 	font-size: 0.8125em;
 	font-family: helvetica, arial, sans-serif;
 	width: 50%;
 	list-style-type: circle;
-	padding: 0;
+	padding left: 4px;
+	line-height: 1.5em
 
 }
 
@@ -51,46 +61,118 @@ ul{
 	font-family: helvetica, arial, sans-serif;
 	list-style-type: none;
 	padding: 0;
+	
+}
+
+.inline{
+	display: inline;
+	float: right;
+	width: 60px;
+	li
 }
 
 h2{
+	/*float: left;
+	clear: both;*/
+}
+
+
+.img{
+margin: 2px;
+border: 1px solid #666;
+height: auto;
+width: auto;
+float: left;
+clear: right;
+}
+
+.clearboth{
+	clear:both;
+}
+
+
+#photo_container{
+background-color: silver;
+padding: 5px;
+float: right;
+border: solid black 1px;
+border-radius: 5px;
+/*margin-right: auto 0px;*/
+
+
+}
+
+#stats{
+	background-color: silver;
+	width: 270px;
+	padding-left: 3px;
+	border: solid black 1px;
+	border-radius: 5px;
+	float:left;
+	clear:left;
+	margin-bottom: 15px;
 }
 
 
 a:link{
-	color: blue
+	color: silver
 }
 
 a:visited{
-	color: purple
+	color: gray
 }
 a:hover{
-	color: silver
+	color: cyan
 }
 a:active{
-	color: black
+	color: white
 }
 
-#intro{
+#intro_containter{
+	border-left: 1px solid grey;
+	padding: 1em
+	max-width: 36em;
+	/*float:right;*/
 	width: 50.632911%; /*400px;*/
-	float: right;
 	margin: 3.75%; /*15px;*/
 }
+
+
+
 #closing{
 	margin: 1.8987342%; /*15px;*/
-	column-count: 2;
+	-moz-column-count: 2;
+	float:left;
+	clear: both;
 }
 
 #main_image_container{
-	border: 3px solid #666;
 	width: 38.35443%;/*303px*/
-	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	max-width: 100%;
+	/*float:left;*/
+	/*position: absolute;*/
+	
 }
 
 #main_image_container img{
 	max-width: 100%;
 }
 
+footer{
+	float:left;
+	background-color: silver;
+	width: 100%;
+	padding: 5px;
+}
+
+#wrapper{
+	margin-left: 10%;
+	margin-right: 10%;
+	
+
+}
 
 /*===============Media Queries===================*/
 
@@ -108,9 +190,7 @@ a:active{
 /*mobile portrait to mobile landscape*/
 @media only screen and (min-width: 479px) {
 
-#main_image_container{display:none;}
+/* #main_image_container{display:none;} */
 
-
-	
 }
 
