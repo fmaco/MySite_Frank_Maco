@@ -7,17 +7,19 @@ body{
 	max-width: 900px;
 }
 
+
 header{
 	width: 100%;
 	height: 50px;
 	background: black;
 	padding: 10px 10px 10px 10px
-
 }
+
 
 h1, h2, h3{
 	font-family: 'fugaz one' , cursive;
 }
+
 
 h1{
 	font-size: 1.5em;
@@ -26,10 +28,12 @@ h1{
 	clear: both;
 }
 
+
 h3{
 	text-shadow: 2px 2px black;
 	color: white;
 }
+
 
 p{
 	color: gray;
@@ -37,11 +41,12 @@ p{
 	font-family: helvetica, arial, sans-serif;
 	text-align: justify;
 }
+
+
 nav{
 	margin: 0 auto;
 	color: white;
 	list-style-type: none;
-	
 }	
 
 
@@ -52,8 +57,8 @@ ol{
 	list-style-type: circle;
 	padding left: 4px;
 	line-height: 1.5em
-
 }
+
 
 ul{
 	font-size: 0.8125em;
@@ -61,19 +66,13 @@ ul{
 	font-family: helvetica, arial, sans-serif;
 	list-style-type: none;
 	padding: 0;
-	
 }
+
 
 .inline{
 	display: inline;
 	float: right;
 	width: 60px;
-	li
-}
-
-h2{
-	/*float: left;
-	clear: both;*/
 }
 
 
@@ -86,6 +85,7 @@ float: left;
 clear: right;
 }
 
+
 .clearboth{
 	clear:both;
 }
@@ -97,19 +97,17 @@ padding: 5px;
 float: right;
 border: solid black 1px;
 border-radius: 5px;
-/*margin-right: auto 0px;*/
-
-
 }
+
 
 #stats{
 	background-color: silver;
-	width: 270px;
+	width: 270px
 	padding-left: 3px;
 	border: solid black 1px;
 	border-radius: 5px;
 	float:left;
-	clear:left;
+	clear:both;
 	margin-bottom: 15px;
 }
 
@@ -128,11 +126,12 @@ a:active{
 	color: white
 }
 
+
 #intro_containter{
 	border-left: 1px solid grey;
 	padding: 1em
 	max-width: 36em;
-	/*float:right;*/
+	float:right;
 	width: 50.632911%; /*400px;*/
 	margin: 3.75%; /*15px;*/
 }
@@ -143,54 +142,151 @@ a:active{
 	margin: 1.8987342%; /*15px;*/
 	-moz-column-count: 2;
 	float:left;
-	clear: both;
+	/*clear: right;*/
 }
+
 
 #main_image_container{
 	width: 38.35443%;/*303px*/
 	margin-left: 10px;
 	margin-right: 10px;
 	max-width: 100%;
-	/*float:left;*/
-	/*position: absolute;*/
-	
+	float:left;
 }
+
 
 #main_image_container img{
 	max-width: 100%;
 }
+
 
 footer{
 	float:left;
 	background-color: silver;
 	width: 100%;
 	padding: 5px;
+	margin-top: 10px
 }
+
 
 #wrapper{
 	margin-left: 10%;
 	margin-right: 10%;
+}
+
+
+
+/*----------------------------------TABLE INFO-----------*/
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td{
+	font-size: 0.8125em;
+	font-family: helvetica, arial, sans-serif;
+	border: 1px solid black;
+	padding:0.3m
+	text-align: left;
+}
+
+
+th{
+	font-size: 0.8125em;
+	font-family: 'fugaz one',cursive;
+	border: 1px solid black;
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding:0.3m
+}
+
+#Membership_containter{
+	float:left;
+	clear:left;
+	background-color: silver;
+	width: 40%;
+	padding: 1em;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-bottom:15px;
 	
+}
+
+#bottom_container{
+	clear:both;
+}
+
+/*----------------------------FORM INFO------------------*/
+#form_container{
+	background-color:silver;
+	width:45%
+	Margin-top: 15px;
+	float:left;
+	clear:none;
+	margin-left: 20px;
+	padding: 0.3em;
+	
+}
+
+form{
+
+	font-size: 0.8125em;
+	font-family: helvetica, arial, sans-serif;	
+	padding: 1em;
+	width:90%;
 
 }
 
-/*===============Media Queries===================*/
 
-/*Tablet portrait to 960*/
+/*----------------------Media Queries------------------------*/
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Tablet portrait to 960*/
+
 @media screen and (min-width: 768px) and (max-width: 959px) {
-	
+
+
+
 }
 
-/*mobile landscape to tablet portrait*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++mobile landscape to tablet portrait*/
+
 @media only screen and (min-width: 480px) and (max-width: 767px){
 
+
+#photo_container{width: 100%;}
+
+#stats{ width: 100%;}
+
+#form_container{width:100%;}
+
+#Membership_containter{width: 100%;}
+
+#closing{-moz-column-count:1;}
+
 }
 
 
-/*mobile portrait to mobile landscape*/
-@media only screen and (min-width: 479px) {
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++mobile portrait to mobile landscape*/
 
-/* #main_image_container{display:none;} */
+@media only screen and (max-width: 479px) {
+
+#main_image_container{display:none;}
+ 
+ #photo_container{width: 100%;}
+ 
+ #stats{width: 100%;}
+
+#Membership_containter{width: 100%;}
+
+#closing{-moz-column-count: 1;}
+
+#form_container{width:100%;}
+
+header{height: 125px;}
 
 }
+
+
+
 
